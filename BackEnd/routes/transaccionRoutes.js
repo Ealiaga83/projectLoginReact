@@ -1,7 +1,15 @@
 
 import express from "express";
 import { procesarTransaccion, consultarSaldo, obtenerHistorialTransacciones, obtenerInfoCompletaCliente, cajeroDeposito, cajeroRetiro } from "../controllers/ControladorTransaccion.js";
+import { logger } from "../middlewares/middlewares.js";
 const router = express.Router();
+
+
+// Middleware para logging en cada ruta
+router.use((req, res, next) => {
+	logger(req.originalUrl);
+	next();
+});
 
 // POST /api/transacciones/cajero-deposito
 router.post("/cajero-deposito", cajeroDeposito);
