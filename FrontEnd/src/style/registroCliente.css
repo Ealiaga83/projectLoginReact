@@ -1,0 +1,90 @@
+.registro-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registro-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registro-card h2 {
+  color: #2d3a4b;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.registro-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.registro-form label {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 0.2rem;
+}
+
+.registro-form input {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.registro-form input:focus {
+  border: 1.5px solid #6366f1;
+}
+
+.registro-form button[type="submit"] {
+  margin-top: 1rem;
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.registro-form button[type="submit"]:hover {
+  background: #4f46e5;
+}
+
+.registro-mensaje {
+  margin-top: 1rem;
+  color: #2563eb;
+  font-weight: 500;
+  text-align: center;
+}
+
+.registro-card button {
+  margin-top: 1.2rem;
+  background: none;
+  border: none;
+  color: #6366f1;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.registro-card button:hover {
+  color: #4338ca;
+}

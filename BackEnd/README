@@ -1,0 +1,83 @@
+# API de Gestión de Usuarios
+
+Este proyecto es un backend desarrollado con **Node.js**, **Express** y **MongoDB**.  
+Su propósito es ofrecer un sistema básico de gestión de usuarios con operaciones CRUD, autenticación y documentación mediante **Swagger**.
+
+---
+
+##  Instalación y ejecución
+
+### 1. Clonar el repositorio
+
+git clone:  git remote add origin https://github.com/Ealiaga83/ProjNodeLogin-.git
+
+### 2. Instalar dependencias
+npm install
+
+### 3. Configurar variables de entorno
+Crea un archivo .env en la raíz del proyecto con el siguiente contenido:
+PORT=2025
+API_VERSION=1
+MONGO_URI=mongodb://localhost:27017/usuariosdb
+
+### 4. Ejecutar el servidor
+npm rum serverMonitor
+
+El servidor se levantará en:
+http://localhost:2025/api/v1
+
+La documentación Swagger estará disponible en:
+http://localhost:2025/api/v1/docs
+
+### 5. Rutas para probar con Bruno
+Se creo una carpeta llamado Otros, dentro de la caprta se encuentra el proyecto bruno comprimido contiene todos los endpoint, (proyecto_ISTLC).
+
+Registrar usuario
+POST /api/v1/register
+{  
+  "nombre": "Eddy",
+  "apellido": "Aliaga",
+  "email": "ealiaga@correo.com",
+  "password": "12345",
+  "rol": "usuario"
+}
+
+Login
+POST /api/v1/login
+{
+  "email": "eddy@example.com",
+  "password": "123456"
+}
+
+Obtener todos los usuarios
+GET /api/v1/usuarios
+
+Obtener usuario por email
+GET /api/v1/usuarios/email/{email}
+
+Actualizar usuario
+PUT /api/v1/usuarios/{id}
+{  
+  "nombre": "",
+  "apellido": "",
+  "email": "ealiaga@correo.com",
+  "password": "12345",
+  "rol": "usuario"
+}
+En este Endpoint, puedes modificar cualquier, no import si unos de los campo esta vacio, no se afectara
+
+Eliminar usuario
+DELETE /api/v1/usuarios/{id}
+
+Adicional adjunto archivo para que ejecutes en BRUNO
+
+## Descripcion breve del backend
+Fue diseñado para proporcionar un sistema de gestión de usuarios con operaciones básicas de autenticación y administración.
+
+* Permitir el registro de nuevos usuarios con contraseñas cifradas para mayor seguridad.
+* Ofrecer un mecanismo de login que valide credenciales de manera segura.
+* Implementar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre los usuarios almacenados en MongoDB.
+* Facilitar la consulta de usuarios por ID o por email.
+* Proporcionar una documentación interactiva con Swagger, que permite probar y entender los endpoints fácilmente.
+
+```bash

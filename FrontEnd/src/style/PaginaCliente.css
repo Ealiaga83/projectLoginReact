@@ -1,0 +1,277 @@
+
+
+.cliente-bg {
+  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: url('https://liceocristiano.edu.ec/wp-content/uploads/2022/07/FOTO-CAMPUS-2--1024x683.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.cliente-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255,255,255,0.82);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.cliente-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+.cliente-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10), 0 1.5px 8px 0 rgba(31,38,135,0.06);
+  max-width: 420px;
+  width: 500%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-top: 6px solid #2563eb;
+  display: flex;
+  flex-direction: column;
+}
+
+.cliente-card-full {
+  background: #fff;
+  border-radius: 1.2rem !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10), 0 1.5px 8px 0 rgba(31,38,135,0.06);
+  border-top: 6px solid #2563eb;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cliente-header {
+  background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+  color: #fff;
+  padding: 2rem 1.5rem 1.2rem 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cliente-header-full {
+  background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%);
+  color: #fff;
+  padding: 2rem 2.5rem 1.2rem 2.5rem;
+  border-radius: 1.2rem 1.2rem 0 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cliente-header .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  box-shadow: 0 2px 12px 0 #2563eb33;
+  border: 3px solid #fff;
+  background: #e0e7ff;
+}
+
+.cliente-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.2rem;
+  color: #fff;
+}
+
+.cliente-subtitle {
+  font-size: 1.2rem;
+  color: #e0e7ff;
+}
+
+.cliente-btn {
+  background: #fff;
+  color: #2563eb;
+  border: none;
+  border-radius: 0.7rem;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  box-shadow: 0 2px 8px 0 #2563eb22;
+  transition: background 0.2s, color 0.2s;
+}
+.cliente-btn:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+.cliente-body {
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+
+.cliente-body-full {
+  padding: 2rem 2vw 1.5rem 2vw;
+  width: 100%;
+  max-width: 120y0px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cliente-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 650px;
+}
+
+.cliente-list .list-group-item {
+  background: #f3f6fd;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 1rem 2rem;
+  min-width: 220px;
+  font-size: 1.15rem;
+  color: #222;
+  box-shadow: 0 1px 4px 0 #2563eb11;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.cliente-list .icon {
+  color: #2563eb;
+  font-size: 1.3rem;
+  margin-right: 0.7rem;
+}
+
+.cliente-footer {
+  background: #f4f8fb;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #888;
+}
+
+.cliente-footer-full {
+  background: #f4f8fb;
+  border-radius: 0 0 1.2rem 1.2rem !important;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #888;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cliente-table-responsive {
+  width: 100%;
+  max-width: 1400px;
+  margin: 2rem auto 0 auto;
+  overflow-x: auto;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.cliente-table-full {
+  width: 100% !important;
+  max-width: 1400px !important;
+  margin: 0 auto;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  background: transparent;
+}
+
+.table {
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: 0 2px 16px 0 rgba(31, 38, 135, 0.07);
+}
+
+.table thead th {
+  color: #fff !important;
+  background: linear-gradient(90deg, #2563eb 60%, #60a5fa 100%) !important;
+  font-size: 1.08rem;
+  font-weight: 700;
+  border-bottom: 2px solid #e0e7ff;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 2px #2563eb22;
+}
+
+.table tbody tr {
+  transition: box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 1px 4px 0 #2563eb11;
+}
+
+.table tbody tr:hover {
+  background: #f3f6fd !important;
+  box-shadow: 0 4px 16px 0 #2563eb22;
+}
+
+.table td, .table th {
+  border: none;
+  padding: 1.1rem 1.3rem;
+  vertical-align: middle;
+  background: #fff;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f8faff !important;
+}
+
+.table-bordered {
+  border: none;
+}
+
+@media (max-width: 900px) {
+  .cliente-header-full, .cliente-body-full {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .cliente-card-full, .cliente-footer-full, .cliente-body-full, .cliente-table-responsive, .cliente-table-full {
+    max-width: 98vw !important;
+  }
+  .cliente-list {
+    grid-template-columns: 1fr;
+    max-width: 98vw;
+  }
+  .cliente-list .list-group-item {
+    padding: 1rem 1vw;
+    min-width: 140px;
+    font-size: 1rem;
+  }
+  .cliente-table-responsive, .cliente-table-full {
+    max-width: 98vw !important;
+    padding: 0.5rem 0.2rem;
+  }
+  .table td, .table th {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.98rem;
+  }
+}
